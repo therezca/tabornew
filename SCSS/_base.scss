@@ -1,0 +1,39 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+.gradient {background: linear-gradient(135deg, rgba(180,234,103,1) 0%, rgba(118,157,63,1) 100%);}
+
+body { margin: 0px;
+	font-family: 'Inter', sans-serif;
+    color: white;
+background-color: $seda;
+font-size: 18px;
+font-weight: 300;}
+
+
+
+h2 {font-size: 32px; font-weight: bold;
+    animation: fadeIn ease 3s;}
+
+@media screen and (max-width: 600px) {
+
+h2 {padding: 15px;}
+    }
+
+h3 {font-size: 50px;
+        margin: 5px;}
+
+.line {height: 2px; width: 300px; padding-bottom: 0px;
+        background-image: linear-gradient(to right, white, transparent);
+        
+    }
+    
+.dashed {border: 0px;
+    border-bottom: 2px dashed;
+    position: relative;
+    
+    color:$seda;
+     }
+
+h4 {font-size: 24px;}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Pangolin&display=swap" rel="stylesheet"> 
+
+
+
+</head>
+<body>
+<!-- HEADER -->
+<header class="header">
+    
+    <div class="header__kontejner">
+        
+
+    <a href="/" class="header__logolink" ><img class="header__logo" src="/soubor/logo.png" alt="Logo"></a>
+
+    
+    <label for="menu-checkbox" class="menu__toggler">☰</label>
+    <nav class="header__nav">
+
+        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+	
+		<ul class="header__list">
+
+    <li class="header__item"> <a href="/otaboru/" class="header__link {% if menu === 'otaboru' %}header__item--active{% endif %}">O táboru</a></li>
+    <li class="header__item"><a href="/program/" class="header__link {% if menu === 'program' %}header__item--active{% endif %}" >Program</a></li>
+    <li class="header__item"><a href="/galerie/" class="header__link {% if menu === 'galerie' %}header__item--active{% endif %}" >Galerie</a></li>
+    <li class="header__item"><a href="/postrehy/" class="header__link {% if menu === 'postrehy' %}header__item--active{% endif %}" >Táborové postřehy</a></li>
+    <li class="header__item"><a href="/prihlaska/" role="button" class="header__button--primary button">Přihláška</a></li>
+    </ul>
+
+        </div>
+    </nav>
+    
+</div>
+</header>
+
+
+
+
+<main class="obal">
+
+    {{ content | safe }}
+
+</main>
+
+<footer class="footer">
+
+    <section class="sponzori">
+        <div class="sponzori__row">
+            
+            <h2 class="sponzori__h2>"> Bez vaší podpory by to nešlo.<br><span style="color: black;"> Děkujeme</span></h2>
+            
+            <section class="sponzori__grid">
+            <a href="#"><img class="sponzori__logo" src="/soubor/logo1.png" alt="Logo partnera"></a>
+            <a href="#"><img class="sponzori__logo" src="/soubor/logo1.png" alt="Logo partnera"></a>
+            <a href="#"><img class="sponzori__logo" src="/soubor/logo1.png" alt="Logo partnera"></a>
+            </section>
+        </div>
+    </section>
+
+ 
+
+    <div class="copyright">
+        <p class="copyright__perex">Copyright © 2020, Tábor Veverská Bítýška.</p>
+    </div>
+
+</footer>
+
+
+
+</html>

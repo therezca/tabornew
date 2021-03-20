@@ -1,0 +1,41 @@
+
+.sponzori {
+    padding: 30px 0px;
+    background-color: $khaki;
+
+    &__row {padding-bottom: 30px;
+        text-align: center;
+        max-width: 1100px;
+        margin: auto;}
+
+    &__grid {display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;}
+
+    &__logo {max-width: 100%; cursor: pointer;}
+
+    @media screen and (max-width: 600px){
+        &__grid {padding: 0px 20px;
+        grid-template-columns: 1fr;
+        gap: 50px;}
+
+    &__logo {max-width: 70%;
+    padding: 30px;}
+    h2 {margin: 0px 15px;}
+        }
+
+
+    @media screen and (min-width:601px) and (max-width: 1000px) {
+                
+        &__grid {padding: 0px 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0px;}
+    
+        &__logo {max-width: 70%;
+        padding: 30px;}
+        h2 {margin: 0px 15px;}
+               
+        }
+}
+
+.copyright {background-color: $khaki; padding: 10px 0px; text-align: center;}
